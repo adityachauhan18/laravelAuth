@@ -31,7 +31,9 @@
   </head>
   <body>
    
- header part
+
+ 
+    @include('elements-header')
     
     <div class="slider-area">
         	<!-- Slider -->
@@ -110,9 +112,10 @@
             </div>
         </div>
     </div> <!-- End promo area -->
-   main content area  
+    @yield('content')
    <!-- End product widget area -->
-    footer
+    
+     @include('elements-footer')
    
     <!-- Latest jQuery form server -->
     <script src="https://code.jquery.com/jquery.min.js"></script>
