@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Category;
+use App\Models\Product;
 
 class SiteController extends Controller
 {
@@ -23,9 +24,7 @@ class SiteController extends Controller
      */
     public function index()
     {
-        $Category = Category::all();
-        print_r($Category); 
-        
-        return view('site.index');
+        $latestProduct = Category::find(1)->latestProduct;
+        return view('site.index',  compact('latestProduct'));
     }
 }
