@@ -12,15 +12,15 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
     
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{URL::to('public/assets/css/bootstrap.min.css')}}">
     
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{URL::to('public/assets/css/font-awesome.min.css')}}">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="{{URL::to('public/assets/css/owl.carousel.css')}}">
+    <link rel="stylesheet" href="{{URL::to('public/assets/css/style.css')}}">
+    <link rel="stylesheet" href="{{URL::to('public/assets/css/responsive.css')}}">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,7 +39,7 @@
    
 
  
-    @include('elements-header')
+    @include('elements.header')
     
     <div class="slider-area">
         	<!-- Slider -->
@@ -121,7 +121,7 @@
     @yield('content')
    <!-- End product widget area -->
     
-     @include('elements-footer')
+     @include('elements.footer')
    
     <!-- Latest jQuery form server -->
     <script src="https://code.jquery.com/jquery.min.js"></script>
@@ -130,17 +130,17 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     
     <!-- jQuery sticky menu -->
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
+    <script src="{{URL::to('public/assets/js/owl.carousel.min.js')}}"></script>
+    <script src="{{URL::to('public/assets/js/jquery.sticky.js')}}"></script>
     
     <!-- jQuery easing -->
-    <script src="js/jquery.easing.1.3.min.js"></script>
+    <script src="{{URL::to('public/assets/js/jquery.easing.1.3.min.js')}}"></script>
     
     <!-- Main Script -->
-    <script src="js/main.js"></script>
+    <script src="{{URL::to('public/assets/js/main.js')}}"></script>
     
     <!-- Slider -->
-    <script type="text/javascript" src="js/bxslider.min.js"></script>
-	<script type="text/javascript" src="js/script.slider.js"></script>
+    <script type="text/javascript" src="{{URL::to('public/assets/js/bxslider.min.js')}}"></script>
+    <script type="text/javascript" src="{{URL::to('public/assets/js/script.slider.js')}}"></script>
   </body>
 </html>
