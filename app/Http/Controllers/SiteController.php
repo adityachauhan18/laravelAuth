@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
+use App\Models\Category;
 
 class SiteController extends Controller
 {
@@ -23,6 +23,8 @@ class SiteController extends Controller
      */
     public function index()
     {
+        $Category = Category::all();
+        print_r($Category); 
         
         return view('site.index');
     }
