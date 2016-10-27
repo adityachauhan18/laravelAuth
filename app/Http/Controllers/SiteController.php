@@ -6,7 +6,7 @@ use App\Models\Category;
 use App\Models\Product;
 
 class SiteController extends Controller
-{
+{ //9582428548
     /**
      * Create a new controller instance.
      *

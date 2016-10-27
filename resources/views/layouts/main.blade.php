@@ -46,7 +46,7 @@
     </div>
     
     
- con
+    @yield('content')
 
      @include('elements.footer')
      
