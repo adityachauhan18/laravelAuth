@@ -14,8 +14,10 @@
 //Route::get('/', function () {
     //return view('welcome');
     Route::get('/', 'SiteController@index');
-    
     Route::get('site/product','SiteController@singleproduct');
+    Route::get('site/product/{id}','SiteController@singleproduct');
+    
+   
 //});
 
 Auth::routes();

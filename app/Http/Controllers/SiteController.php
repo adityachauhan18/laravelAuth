@@ -28,11 +28,19 @@ class SiteController extends Controller
         return view('site.index',  compact('latestProduct'));
     }
     
-    public function singleproduct(){
+    public function singleproduct(Request $request,$ProductId=NULL){
         
+        if(isset($ProductId) && !empty($ProductId)){
+            
+             $ProductInfo=  Product::find($ProductId);
+//            /echo "<pre>";print_r($ProductInfo); die;
+             return view('site.single',compact('ProductInfo'));
+        }
         return view('site.single');
     }
-    
+            
+           
+   
     public function contact(){
         
         

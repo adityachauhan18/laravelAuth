@@ -67,5 +67,6 @@
     
     <!-- Main Script -->
     <script src="{{URL::to('public/assets/js/main.js')}}"></script>
+       <script src="{{URL::to('public/assets/js/custom.js')}}"></script>
   </body>
 </html>

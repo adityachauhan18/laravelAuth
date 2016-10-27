@@ -67,10 +67,15 @@
                         </div>
                         
                         <div class="row">
+                            
                             <div class="col-sm-6">
                                 <div class="product-images">
                                     <div class="product-main-img">
-                                        <img src="img/product-2.jpg" alt="">
+                                  
+                                        
+                                      
+                                        <img src="{{URL::to('public/assets/img/')}}/{{$ProductInfo->product_image}}" alt="">
+                                        
                                     </div>
                                     
                                     <div class="product-gallery">
@@ -83,14 +88,14 @@
                             
                             <div class="col-sm-6">
                                 <div class="product-inner">
-                                    <h2 class="product-name">Sony Smart TV - 2015</h2>
+                                    <h2 class="product-name"> {{$ProductInfo->product_name}} <!--Sony Smart TV - 2015 --></h2>
                                     <div class="product-inner-price">
-                                        <ins>$700.00</ins> <del>$100.00</del>
+                                        <ins>{{$ProductInfo->product_prize}}</ins> <del>{{$ProductInfo->product_discount}}</del>
                                     </div>    
                                     
                                     <form action="" class="cart">
                                         <div class="quantity">
-                                            <input type="number" size="4" class="input-text qty text" title="Qty" value="1" name="quantity" min="1" step="1">
+                                            <input type="number" size="4" id="quantity" class="input-text qty text" title="Qty" value="1" name="quantity" min="1" step="1">
                                         </div>
                                         <button class="add_to_cart_button" type="submit">Add to cart</button>
                                     </form>   
