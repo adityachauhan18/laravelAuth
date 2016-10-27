@@ -27,4 +27,13 @@ class SiteController extends Controller
         $latestProduct = Category::find(1)->latestProduct;
         return view('site.index',  compact('latestProduct'));
     }
+    
+    public function singleproduct(){
+        
+        return view('site.single');
+    }
+        
+        
+    
+            
 }
