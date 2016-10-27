@@ -32,6 +32,16 @@ class SiteController extends Controller
         
         return view('site.single');
     }
+    
+    public function contact(){
+        
+        
+    }
+    
+    public function shoppage(){
+        
+        
+    }
         
         
     

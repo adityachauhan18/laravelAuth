@@ -13,6 +13,17 @@ class CartController extends Controller{
     
     public function addCart(){
         
+        
+    }
+    
+    public function cart(){
+        
+        
+    }
+    
+    public function Checkout(){
+        
+        
     }
     
     

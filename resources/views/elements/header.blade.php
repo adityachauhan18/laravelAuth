@@ -71,14 +71,13 @@
                 </div> 
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="shop.html">Shop page</a></li>
-                        <li><a href="{{URL::to('site/product')}}">Single product</a></li>
-                        <li><a href="cart.html">Cart</a></li>
-                        <li><a href="checkout.html">Checkout</a></li>
-                        <li><a href="#">Category</a></li>
-                        <li><a href="#">Others</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li {{(Request::is('/')?'class=active':'')}}><a href="{{URL::to('/')}}">Home</a></li>
+                        <li {{(Request::is('shoppage')?'class=active':'')}}><a href="{{URL::to('site/shoppage')}}">Shop page</a></li>
+                        <li {{(Request::is('site/product') ? 'class=active' : '') }}><a href="{{URL::to('site/product')}}">Single product</a></li>
+                        <li {{(Request::is('cart')?'class=active':'')}}><a href="{{URL::to('cart')}}">Cart</a></li>
+                        <li {{(Request::is('checkout')?'class=active':'')}}><a href="{{URL::to('cart/checkout')}}">Checkout</a></li>
+                        <li {{(Request::is('Category')?'class=active':'')}}><a href="{{URL::to('category')}}">Category</a></li>
+                      <li {{(Request::is('Contact')?'class=active':'')}}><a href="{{URL::to('site/contact')}}">Contact</a></li>
                     </ul>
                 </div>  
             </div>
