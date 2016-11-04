@@ -6,7 +6,10 @@ use App\Models\Category;
 use App\Models\Product;
 
 class SiteController extends Controller
-{ //9582428548
+{
+    private $latestProductID=1;
+
+    
     /**
      * Create a new controller instance.
      *
@@ -24,29 +27,31 @@ class SiteController extends Controller
      */
     public function index()
     {
-        $latestProduct = Category::find(1)->latestProduct;
+        
+        $latestProduct = Category::find($this->latestProductID)->latestProduct;
         return view('site.index',  compact('latestProduct'));
     }
     
-    public function singleproduct(Request $request,$ProductId=NULL){
+    public function singleproduct(Request $request,$pId=null){
         
-        if(isset($ProductId) && !empty($ProductId)){
-            
-             $ProductInfo=  Product::find($ProductId);
-//            /echo "<pre>";print_r($ProductInfo); die;
+        if(isset($pId) && !empty($pId)){
+             $ProductInfo=  Product::find($pId);
              return view('site.single',compact('ProductInfo'));
         }
         return view('site.single');
     }
+    
+   
             
            
    
-    public function contact(){
-        
-        
+    public function contact(Request $request){
+        return  view ('site.contact');
     }
-    
-    public function shoppage(){
+        
+    public function shoppage(Request $request){
+        
+        return view('site.shoppage');
         
         
     }

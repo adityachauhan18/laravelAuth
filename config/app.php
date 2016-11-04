@@ -1,6 +1,10 @@
 <?php
 
 return [
+    // service provider is centeral place of laravel appcliction bootstrapping. Your appliction and laravel core service are bootstrapped 
+    // via service providers. Bootstraped means registering things include register service caninter and binding events and routes.
+    // service provider are the cenral appliction of configure in yours application
+    
 
     /*
     |--------------------------------------------------------------------------

@@ -21,7 +21,8 @@
     <link rel="stylesheet" href="{{URL::to('public/assets/css/owl.carousel.css')}}">
     <link rel="stylesheet" href="{{URL::to('public/assets/css/style.css')}}">
     <link rel="stylesheet" href="{{URL::to('public/assets/css/responsive.css')}}">
-
+    
+    
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -33,26 +34,18 @@
     @include('elements.header')
      <!-- End mainmenu area -->
     
-    <div class="product-big-title-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="product-bit-title text-center">
-                        <h2>Shop</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+   
     
-    
-    @yield('content')
+     @yield('content')
 
      @include('elements.footer')
      
      
    
     <!-- Latest jQuery form server -->
+     <script src="{{URL::to('public/assets/js/custom.js')}}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQkcMzH3kaDQjwh_Zt3nOjfPSKSQox1Uw&callback=initMap">
+    </script>
     <script src="https://code.jquery.com/jquery.min.js"></script>
     
     <!-- Bootstrap JS form CDN -->
@@ -63,10 +56,10 @@
     <script src="{{URL::to('public/assets/js/jquery.sticky.js')}}"></script>
     
     <!-- jQuery easing -->
-    <script src="{{URL::to('pubic/assets/js/jquery.easing.1.3.min.js')}}"></script>
+    <script src="{{URL::to('public/assets/js/jquery.easing.1.3.min.js')}}"></script>
     
-    <!-- Main Script -->
+
     <script src="{{URL::to('public/assets/js/main.js')}}"></script>
-       <script src="{{URL::to('public/assets/js/custom.js')}}"></script>
+       
   </body>
 </html>

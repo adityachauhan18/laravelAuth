@@ -16,6 +16,9 @@
     Route::get('/', 'SiteController@index');
     Route::get('site/product','SiteController@singleproduct');
     Route::get('site/product/{id}','SiteController@singleproduct');
+    Route::get('shoppage','SiteController@shoppage');
+    Route::get('site/contact','SiteController@contact');
+    
     
    
 //});

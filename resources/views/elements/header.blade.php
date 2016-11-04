@@ -72,8 +72,7 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li {{(Request::is('/')?'class=active':'')}}><a href="{{URL::to('/')}}">Home</a></li>
-                        <li {{(Request::is('shoppage')?'class=active':'')}}><a href="{{URL::to('site/shoppage')}}">Shop page</a></li>
-                        <li {{(Request::is('site/product') ? 'class=active' : '') }}><a href="{{URL::to('site/product')}}">Single product</a></li>
+                        <li {{(Request::is('shoppage')?'class=active':'')}}><a href="{{URL::to('shoppage')}}">Shop page</a></li>
                         <li {{(Request::is('cart')?'class=active':'')}}><a href="{{URL::to('cart')}}">Cart</a></li>
                         <li {{(Request::is('checkout')?'class=active':'')}}><a href="{{URL::to('cart/checkout')}}">Checkout</a></li>
                         <li {{(Request::is('Category')?'class=active':'')}}><a href="{{URL::to('category')}}">Category</a></li>

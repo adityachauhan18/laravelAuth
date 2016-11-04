@@ -1,6 +1,7 @@
 @extends('layouts.main')
 
-@section('content')    
+@section('content')   
+
 <div class="single-product-area">
         <div class="zigzag-bottom"></div>
         <div class="container">
@@ -72,9 +73,7 @@
                                 <div class="product-images">
                                     <div class="product-main-img">
                                   
-                                        
-                                      
-                                        <img src="{{URL::to('public/assets/img/')}}/{{$ProductInfo->product_image}}" alt="">
+                                      <img src="{{URL::to('public/assets/img/')}}/{{$ProductInfo->product_image}}" alt="">
                                         
                                     </div>
                                     
